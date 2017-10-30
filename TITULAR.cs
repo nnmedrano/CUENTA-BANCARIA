@@ -1,12 +1,13 @@
 using System;
 
-       public class Titular
+namespace CUENTA_BANCARIA
+     { 
+          public class Titular
        {
-           private string nombreCompleto{get,set};
-           public long DNI{get,set};
-           private string mail{get,set};
-           private int telefono{get,set};
-           public int DateTime{get,set};
+           public string Nombre{get; set;}
+           public long DNI{get; set;}
+           public string Mail{get; set;}
+           private int Telefono{get; set;}
+           public DateTime FechaDeNacimiento{get; set;}
        }
-     
-    
+     }
