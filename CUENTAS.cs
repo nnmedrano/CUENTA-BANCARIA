@@ -8,12 +8,12 @@ public class Cuenta
     public List<Titular> ListaDeTitulares = new List<Titular>();
     public int saldo;
 
-     public void depositar(decimal monto)
+    public void depositar(decimal monto)
         {
            saldo = saldo + monto;
         }
 
-        public virtual void retirar(decimal monto)
+    public void retirar(decimal monto)
         {
           saldo = saldo - monto;
 }
