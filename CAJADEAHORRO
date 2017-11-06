@@ -1,0 +1,18 @@
+using System;
+
+namespace CUENTA_BANCARIA
+{
+    public CAJADEAHORRO (long numero): base (numero)  
+    {
+
+    } 
+
+    public override bool (decimal cantidad)
+    {
+    this.Saldo += cantidad
+    this.Operaciones.Add(new Operacion { Monto = 1 * cantidad,Fecha = DateTime.Now,Tipo = "Extracción"});
+    return true;
+    
+    }
+
+}
